@@ -14,6 +14,8 @@
   --text-color: #f1b2ce;
   --text-bg-color: #ff0070;
   --accent-color: #db00ff;
+
+  background-color: var(--bg-color, #000028);
 }
 
 .page.theme_dark .header {
@@ -36,7 +38,27 @@
   display: block;
 }
 
-.page.theme_dark .text {
+.page.theme_dark .text-common {
   --text-color: #000028;
+}
+
+.page.theme_dark .title-h2 {
+  --text-color: #ff0070;
+}
+
+.page.theme_dark .title-h3 {
+  --text-bg-color: #ff0070;
+}
+
+.page.theme_dark .title-h4 {
+  --text-bg-color: #ff0070;
+}
+
+.page.theme_dark .section-text .text {
+  --text-color: #f1b2ce;
+}
+
+.page.theme_dark .link {
+  --text-accent-color: #ff0070;
 }
 
