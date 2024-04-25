@@ -1,20 +1,86 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   font-family: 'IBM Plex mono', sans-serif;
-  padding: 0 10px;
 }
 
 .header {
-  padding: 10px 0;
+  position: relative;
+  padding: 75px 10px 66px 10px;
+  background-image: url('../images/cover-image-light.png');
+  background-image: -webkit-image-set(
+    url('../images/cover-image-light.avif') type('image/avif'),
+    url('../images/cover-image-light.jpg') type('image/jpeg')
+  );
+  background-image: image-set(
+    url('../images/cover-image-light-375px.avif') type('image/avif'),
+    url('../images/cover-image-light.jpg') type('image/jpeg')
+  );
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.decorated-zone::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: block;
+  border-inline-end: 1px solid var(--text-color, #353430);
+  border-block-start: 1px solid var(--text-color, #353430);
+  inline-size: 25px;
+  block-size: 25px;
+}
+
+.decorated-zone::after {
+  content: '';
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  display: block;
+  border-inline-start: 1px solid var(--text-color, #353430);
+  border-block-end: 1px solid var(--text-color, #353430);
+  inline-size: 25px;
+  block-size: 25px;
+}
+
+.header__decor-item {
+  position: absolute;
+  top: 10px;
+  right: 9px;
+  display: none;
+  padding-right: 27px;
+  color: var(--text-accent-color, #ff0070);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0;
+}
+
+.header__decor-item::after {
+  content: '';
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  border-radius: 100%;
+  box-shadow: 0 0 4px 2px currentColor;
+  background: currentColor;
+  min-block-size: 9px;
+  min-inline-size: 9px;
 }
 
 .header__theme-menu-list {
   display: flex;
   flex-direction: column;
+  align-items: end;
   gap: 10px;
+  padding: 0;
   list-style: none;
+  margin-block-end: 67px;
+}
+
+@media (min-width: 1024px) {
+  .header__theme-menu-list {
+  }
 }
 
 .header__theme-menu-button {
@@ -33,17 +99,38 @@
 }
 
 .header__title {
+  margin-block-end: 55px;
+  color: var(--accent-color, #ffc2e6);
   font-weight: 700;
-  /* font-size: clamp(7.25rem, 7.071rem + 0.8949vw, 7.5rem); */
   font-size: clamp(7.25rem, 7.098rem + 0.8386vw, 7.5rem);
   line-height: 82.5%;
   letter-spacing: 0;
-  transform: translateX(-6px);
+  text-shadow: 4px 4px 0 var(--text-accent-color, #ff0070);
 }
 
 @media (min-width: 768px) {
   .header__title {
     font-size: clamp(7.5rem, 0.5353rem + 14.5098vw, 9.8125rem);
   }
+}
+
+.header__theme-menu-button {
+  color: var(--text-color, #353430);
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid currentColor;
+}
+
+.text {
+  color: var(--text-color, #353430);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23.4px;
+  letter-spacing: 0;
+}
+
+.text.text_fill-bg {
+  background-color: var(--text-bg-color, #ff8dcb);
 }
 

@@ -3,3 +3,12 @@
   и их переопределение под различные устройства
 */
 
+:root {
+  /* colors */
+  --bg-color: #fff1f7;
+  --text-color: #353430;
+  --text-bg-color: #ff8dcb;
+  --text-accent-color: #ff0070;
+  --accent-color: #ffc2e6;
+}
+
