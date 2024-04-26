@@ -11,6 +11,10 @@
       content="width=device-width, initial-scale=1.0"
     />
     <title>Сложно сосредоточиться</title>
+    <meta
+      name="color-scheme"
+      content="light dark"
+    />
     <link
       rel="stylesheet"
       href="./styles/globals.css"
@@ -73,7 +77,7 @@
       </p>
     </header>
     <main class="main">
-      <section class="section-text section-text__concentrate">
+      <section class="section section__concentrate">
         <h2 class="text-common title-h2">Почему сосредоточиться так сложно</h2>
         <ul class="text-list">
           <li class="text-list__item">
@@ -109,7 +113,7 @@
           </li>
         </ul>
       </section>
-      <section class="section-text section-text__attention">
+      <section class="section section__attention">
         <h2 class="text-common title-h2">Что снижает концентрацию внимания?</h2>
         <ul class="text-list">
           <li class="text-list__item">
@@ -148,7 +152,7 @@
           </li>
         </ul>
       </section>
-      <section class="section-text section-text__concentrate-better">
+      <section class="section section__concentrate-better">
         <h2 class="text-common title-h2">
           Как концентрироваться лучше, чем золотая рыбка (то есть дольше трёх
           секунд)
@@ -213,6 +217,55 @@
             </p>
           </li>
         </ul>
+      </section>
+      <section class="section section__galery">
+        <h2 class="text-common title-h3">А можно в картинках?</h2>
+        <div class="section__grid">
+          <picture>
+            <source
+              srcset="./images/sunset-375.avif 1x, ./images/sunset-375.avif 2x"
+              type="image/avif"
+              sizes="(min-width: 375px) 375px, 750px"
+            />
+            <source
+              srcset="./images/sunset-375.webp 1x, ./images/sunset-375.webp 2x"
+              type="image/webp"
+              sizes="(min-width: 375px) 375px, 750px"
+            />
+            <img
+              src="./images/sunset.png"
+              alt="компьютерное изображение, малиновый закат, горы, птицы"
+              loading="lazy"
+              class="section__grid-img"
+              srcset="
+                ./images/sunset-375.png 375w,
+                ./images/sunset-750.png 750w
+              "
+              sizes="(max-width: 375px) 375px, 750px"
+            />
+          </picture>
+
+          <img
+            src=""
+            alt=""
+            class="section__grid-img"
+          />
+          <img
+            src=""
+            alt=""
+            class="section__grid-img"
+          />
+          <img
+            src=""
+            alt=""
+            class="section__grid-img"
+          />
+          <img
+            src=""
+            alt=""
+            class="section__grid-img"
+          />
+        </div>
       </section>
     </main>
 

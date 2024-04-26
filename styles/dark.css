@@ -14,7 +14,6 @@
   --text-color: #f1b2ce;
   --text-bg-color: #ff0070;
   --accent-color: #db00ff;
-
   background-color: var(--bg-color, #000028);
 }
 
@@ -54,11 +53,20 @@
   --text-bg-color: #ff0070;
 }
 
-.page.theme_dark .section-text .text {
+.page.theme_dark .section .text {
   --text-color: #f1b2ce;
 }
 
 .page.theme_dark .link {
   --text-accent-color: #ff0070;
 }
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #000028;
+    --text-color: #f1b2ce;
+    --text-bg-color: #ff0070;
+    --accent-color: #db00ff;  
+    }
+} */
 

@@ -8,11 +8,11 @@
 .main {
   padding: 40px 0;
 }
-.section-text {
+.section {
   padding: 0 10px;
 }
 
-.section-text:not(:last-of-type) {
+.section:not(:last-of-type) {
   margin-block-end: 50px;
 }
 
@@ -20,7 +20,7 @@
   margin-block-end: 55px;
   color: var(--accent-color, #ffc2e6);
   font-weight: 700;
-  font-size: clamp(7.25rem, 7.098rem + 0.8386vw, 7.5rem);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 82.5%;
   letter-spacing: 0;
   text-shadow: 4px 4px 0 var(--text-accent-color, #ff0070);
@@ -28,7 +28,7 @@
 
 @media (min-width: 768px) {
   .header__title {
-    font-size: clamp(7.5rem, 0.5353rem + 14.5098vw, 9.8125rem);
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 }
 
@@ -59,7 +59,7 @@
   background-color: var(--text-bg-color, #ff8dcb);
 }
 
-.section-text .text {
+.section .text {
   font-weight: 400;
 }
 
@@ -181,6 +181,7 @@
 
 /* sections */
 
-.section-text__concentrate {
+.section__grid-img {
+  width: 100%;
 }
 
