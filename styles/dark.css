@@ -29,6 +29,10 @@
   );
 }
 
+.page.theme_dark .text-common {
+  --text-color: #000028;
+}
+
 .page.theme_dark :is(.header, .footer, .title-h2) {
   --text-color: #ff0070;
 }
@@ -37,11 +41,7 @@
   display: block;
 }
 
-.page.theme_dark .text-common {
-  --text-color: #000028;
-}
-
-.page.theme_dark :is(.title-h3, .title-h4) {
+.page.theme_dark .title-decor {
   --text-bg-color: #ff0070;
 }
 
@@ -73,6 +73,10 @@
     );
   }
 
+  :root .text-common {
+    --text-color: #000028;
+  }
+
   :root :is(.header, .footer, .title-h2) {
     --text-color: #ff0070;
   }
@@ -81,11 +85,7 @@
     display: block;
   }
 
-  :root .text-common {
-    --text-color: #000028;
-  }
-
-  :root :is(.title-h3, .title-h4) {
+  :root .title-decor {
     --text-bg-color: #ff0070;
   }
 

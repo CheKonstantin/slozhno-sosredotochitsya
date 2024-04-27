@@ -42,9 +42,13 @@
   letter-spacing: 0;
 }
 
-.title-h3 {
+.title-decor {
   background-color: var(--text-bg-color, #ff8dcb);
 }
+
+/* .title-h3 {
+  background-color: var(--text-bg-color, #ff8dcb);
+} */
 
 .title-h4 {
   margin-block-end: 10px;

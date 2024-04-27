@@ -37,7 +37,7 @@
   --text-color: #353430;
 }
 
-.page.theme_light :is(.title-h3, .title-h4) {
+.page.theme_light .title-decor {
   --text-bg-color: #ff8dcb;
 }
 
