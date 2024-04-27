@@ -18,5 +18,30 @@
 
 .page.theme_light .header {
   --text-color: #353430;
+  background-image: url('../images/cover-image-light.png');
+  background-image: -webkit-image-set(
+    url('../images/cover-image-light.avif') type('image/avif'),
+    url('../images/cover-image-light.jpg') type('image/jpeg')
+  );
+  background-image: image-set(
+    url('../images/cover-image-light-375px.avif') type('image/avif'),
+    url('../images/cover-image-light.jpg') type('image/jpeg')
+  );
+}
+
+.page.theme_light .header__decor-item {
+  display: none;
+}
+
+.page.theme_light .text-common {
+  --text-color: #353430;
+}
+
+.page.theme_light :is(.title-h3, .title-h4) {
+  --text-bg-color: #ff8dcb;
+}
+
+.page.theme_light .link {
+  --text-accent-color: #ff8dcb;
 }
 
