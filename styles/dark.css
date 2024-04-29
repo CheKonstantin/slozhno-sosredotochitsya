@@ -53,6 +53,12 @@
   --text-color: #f1b2ce;
 }
 
+@media (hover: hover) {
+  .header__theme-menu-button:hover {
+    border: 1px solid rgba(255, 0, 112, 0.4);
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --bg-color: #000028;
@@ -96,5 +102,11 @@
   :root .section .text {
     --text-color: #f1b2ce;
   }
+
+  /* @media (hover: hover) {
+    .header__theme-menu-button:hover {
+      border: 1px solid rgba(255, 0, 112, 0.4);
+    }
+  } */
 }
 
