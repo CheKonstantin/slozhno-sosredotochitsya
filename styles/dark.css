@@ -29,7 +29,7 @@
   --text-color: #000028;
 }
 
-.page.theme_dark :is(.header, .footer, .title-h2) {
+.page.theme_dark :is(.header, .footer, .title-md) {
   --text-color: #ff0070;
 }
 
@@ -95,7 +95,7 @@
     --text-color: #000028;
   }
 
-  :root :is(.header, .footer, .title-h2) {
+  :root :is(.header, .footer, .title-md) {
     --text-color: #ff0070;
   }
 
