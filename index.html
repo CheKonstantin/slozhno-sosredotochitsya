@@ -10,7 +10,22 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
+
     <title>Сложно сосредоточиться</title>
+    <link
+      rel="icon"
+      href="./images/favicon.ico"
+      sizes="any"
+    />
+    <link
+      rel="icon"
+      href="./images/favicon.svg"
+      type="image/svg+xml"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="./images/favicon.png"
+    />
     <meta
       name="color-scheme"
       content="light dark"
@@ -42,7 +57,12 @@
   </head>
   <body class="page">
     <header class="header decorated-zone">
-      <div class="header__decor-item">REC</div>
+      <div
+        class="header__decor-item"
+        aria-hidden="true"
+      >
+        REC
+      </div>
       <nav class="header__theme-menu">
         <ul class="header__theme-menu-list">
           <li class="header__theme-menu-item">
@@ -231,71 +251,106 @@
         <h2 class="text-common title-h3 title-decor">А можно в картинках?</h2>
         <div class="section__grid">
           <div class="section__grid-item">
-            <img
-              src="./images/sunset.png"
-              alt="компьютерное изображение, малиновый закат, горы, птицы"
-              class="section__grid-img"
-              loading="lazy"
-            />
+            <picture>
+              <source
+                srcset="./images/sunset.avif 1x, ./images/sunset-2x.avif 2x"
+                type="image/avif"
+              />
+              <source
+                srcset="./images/sunset.webp 1x, ./images/sunset-2x.webp 2x"
+                type="image/webp"
+              />
+              <img
+                src="./images/sunset.png"
+                srcset="./images/sunset.png 1x, ./images/sunset-2x.png 2x"
+                alt="компьютерное изображение, малиновый закат, горы, птицы"
+                loading="lazy"
+                class="section__grid-img"
+              />
+            </picture>
           </div>
           <div class="section__grid-item">
-            <img
-              src="./images/ice-cream.png"
-              alt="мороженое за шариков, шарики с лицами"
-              class="section__grid-img"
-              loading="lazy"
-            />
+            <picture>
+              <source
+                srcset="
+                  ./images/ice-cream.avif    1x,
+                  ./images/ice-cream-2x.avif 2x
+                "
+                type="image/avif"
+              />
+              <source
+                srcset="
+                  ./images/ice-cream.webp    1x,
+                  ./images/ice-cream-2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <img
+                src="./images/ice-cream.png"
+                srcset="./images/ice-cream.png 1x, ./images/ice-cream-2x.png 2x"
+                alt="мороженое за шариков, шарики с лицами"
+                loading="lazy"
+                class="section__grid-img"
+              />
+            </picture>
           </div>
           <div class="section__grid-item">
-            <img
-              src="./images/tape.png"
-              alt="кассета"
-              class="section__grid-img"
-              loading="lazy"
-            />
+            <picture>
+              <source
+                srcset="./images/tape.avif 1x, ./images/tape-2x.avif 2x"
+                type="image/avif"
+              />
+              <source
+                srcset="./images/tape.webp 1x, ./images/tape-2x.webp 2x"
+                type="image/webp"
+              />
+              <img
+                src="./images/tape.png"
+                srcset="./images/tape.png 1x, ./images/tape-2x.png 2x"
+                alt="кассета"
+                loading="lazy"
+                class="section__grid-img"
+              />
+            </picture>
           </div>
           <div class="section__grid-item">
-            <img
-              src="./images/books.png"
-              alt="стопка книг"
-              class="section__grid-img"
-              loading="lazy"
-            />
+            <picture>
+              <source
+                srcset="./images/books.avif 1x, ./images/books-2x.avif 2x"
+                type="image/avif"
+              />
+              <source
+                srcset="./images/books.webp 1x, ./images/books-2x.webp 2x"
+                type="image/webp"
+              />
+              <img
+                src="./images/books.png"
+                srcset="./images/books.png 1x, ./images/books-2x.png 2x"
+                alt="стопка книг"
+                loading="lazy"
+                class="section__grid-img"
+              />
+            </picture>
           </div>
           <div class="section__grid-item">
-            <img
-              src="./images/street.png"
-              alt="улица в фиолетовых тонах"
-              class="section__grid-img"
-              loading="lazy"
-            />
+            <picture>
+              <source
+                srcset="./images/street.avif 1x, ./images/street-2x.avif 2x"
+                type="image/avif"
+              />
+              <source
+                srcset="./images/street.webp 1x, ./images/street-2x.webp 2x"
+                type="image/webp"
+              />
+              <img
+                src="./images/street.png"
+                srcset="./images/street.png 1x, ./images/street-2x.png 2x"
+                alt="улица в фиолетовых тонах"
+                loading="lazy"
+                class="section__grid-img"
+              />
+            </picture>
           </div>
-
-          <!-- <picture>
-            <source
-              srcset="./images/sunset-375.avif 1x, ./images/sunset-375.avif 2x"
-              type="image/avif"
-              sizes="(min-width: 375px) 375px, 750px"
-            />
-            <source
-              srcset="./images/sunset-375.webp 1x, ./images/sunset-375.webp 2x"
-              type="image/webp"
-              sizes="(min-width: 375px) 375px, 750px"
-            />
-            <img
-              src="./images/sunset.png"
-              alt="компьютерное изображение, малиновый закат, горы, птицы"
-              loading="lazy"
-              class="section__grid-img"
-              srcset="
-                ./images/sunset-375.png 375w,
-                ./images/sunset-750.png 750w
-              "
-              sizes="(max-width: 375px) 375px, 750px"
-            />
-          </picture>
-
-          -->
         </div>
       </section>
     </main>
