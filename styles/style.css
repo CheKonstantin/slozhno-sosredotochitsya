@@ -88,7 +88,7 @@
 .header {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  height: 100vh;
 
   padding: clamp(4.6875rem, -2.2901rem + 29.771vw, 12rem)
     clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem)
@@ -118,7 +118,7 @@
 
 @media (orientation: landscape) {
   .header {
-    min-height: unset;
+    height: unset;
   }
 }
 
