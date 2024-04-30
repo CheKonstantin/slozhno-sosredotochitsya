@@ -116,11 +116,11 @@
   }
 }
 
-@media (orientation: landscape) {
+/* @media (orientation: landscape) {
   .header {
     height: unset;
   }
-}
+} */
 
 .decorated-zone {
   position: relative;
