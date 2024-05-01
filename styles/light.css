@@ -6,8 +6,7 @@
   --accent-color: #ffc2e6;
 }
 
-.page.theme_light .header {
-  --text-color: #353430;
+.page.theme_light {
   background-image: url('../images/cover-image-light.png');
 }
 
@@ -18,7 +17,7 @@
       url('../images/cover-image-light.png') type('image/png')
     )
 ) {
-  .page.theme_light .header {
+  .page.theme_light {
     background-image: image-set(
       url('../images/cover-image-light.avif') type('image/avif'),
       url('../images/cover-image-light.png') type('image/png')

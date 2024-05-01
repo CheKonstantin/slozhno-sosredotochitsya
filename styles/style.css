@@ -1,7 +1,26 @@
 .page {
   font-family: 'IBM Plex mono', sans-serif;
   background-color: var(--bg-color, #fff1f7);
+  background-image: url('../images/cover-image-light.png');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
   background-attachment: fixed;
+}
+
+@supports (
+  background-image:
+    image-set(
+      url('../images/cover-image-light.avif') type('image/avif'),
+      url('../images/cover-image-light.png') type('image/png')
+    )
+) {
+  .page {
+    background-image: image-set(
+      url('../images/cover-image-light.avif') type('image/avif'),
+      url('../images/cover-image-light.png') type('image/png')
+    );
+  }
 }
 
 /* components */
@@ -94,33 +113,7 @@
     clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem)
     clamp(4.125rem, -2.8526rem + 29.771vw, 11.4375rem)
     clamp(0rem, 1.2214rem + -2.5445vw, 0.625rem);
-
-  background-image: url('../images/cover-image-light.png');
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  background-size: cover;
 }
-
-@supports (
-  background-image:
-    image-set(
-      url('../images/cover-image-light.avif') type('image/avif'),
-      url('../images/cover-image-light.png') type('image/png')
-    )
-) {
-  .header {
-    background-image: image-set(
-      url('../images/cover-image-light.avif') type('image/avif'),
-      url('../images/cover-image-light.png') type('image/png')
-    );
-  }
-}
-
-/* @media (orientation: landscape) {
-  .header {
-    height: unset;
-  }
-} */
 
 .decorated-zone {
   position: relative;
