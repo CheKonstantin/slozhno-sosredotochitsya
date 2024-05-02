@@ -1,54 +1,23 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
-/*.page.theme_light {
-  сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-}*/
-
 .page.theme_light {
   --bg-color: #fff1f7;
   --text-color: #353430;
   --text-bg-color: #ff8dcb;
   --text-accent-color: #ff0070;
   --accent-color: #ffc2e6;
+  --text-common-color: var(--text-color, #353430);
+  --btn-color: var(--text-color, #353430);
+  --decorated-color: var(--text-color, #353430);
+  --title-md-color: var(--text-color, #353430);
+  --link-color: var(--text-color, #353430);
+  --link-accent-color: var(--text-bg-color, #ff8dcb);
+  --section-text: var(--text-color, #353430);
+  --color-opacity: rgba(50, 49, 45, 0.4);
   --image-png-url: url('../images/cover-image-light.png');
   --image-avif-url: url('../images/cover-image-light.avif');
-  --color-opacity: rgba(50, 49, 45, 0.4);
-  background-color: var(--bg-color, #fff1f7);
 }
 
 .page.theme_light .header__decor-item {
   display: none;
-}
-
-.page.theme_light .text-common {
-  --text-color: #353430;
-}
-
-.page.theme_light .title-decor {
-  --text-bg-color: #ff8dcb;
-}
-
-.page.theme_light .link {
-  --text-accent-color: #ff8dcb;
-}
-
-.page.theme_light :is(.header, .footer, .title-md) {
-  --text-color: #353430;
-}
-
-@media (hover: hover) {
-  .page.theme_light .header__theme-menu-button:hover {
-    outline: 1px solid var(--color-opacity);
-  }
-}
-.page.theme_light .header__theme-menu-button:focus-visible {
-  border-block-end: 1px solid var(--color-opacity);
 }
 
 @media (prefers-color-scheme: light) {
@@ -58,39 +27,20 @@
     --text-bg-color: #ff8dcb;
     --text-accent-color: #ff0070;
     --accent-color: #ffc2e6;
+    --text-common-color: var(--text-color, #353430);
+    --btn-color: var(--text-color, #353430);
+    --decorated-color: var(--text-color, #353430);
+    --title-md-color: var(--text-color, #353430);
+    --link-color: var(--text-color, #353430);
+    --link-accent-color: var(--text-bg-color, #ff8dcb);
+    --section-text: var(--text-color, #353430);
+    --color-opacity: rgba(50, 49, 45, 0.4);
     --image-png-url: url('../images/cover-image-light.png');
     --image-avif-url: url('../images/cover-image-light.avif');
-    --color-opacity: rgba(50, 49, 45, 0.4);
-    background-color: var(--bg-color, #fff1f7);
   }
 
   .header__decor-item {
     display: none;
-  }
-
-  .text-common {
-    --text-color: #353430;
-  }
-
-  .title-decor {
-    --text-bg-color: #ff8dcb;
-  }
-
-  .link {
-    --text-accent-color: #ff8dcb;
-  }
-
-  :is(.header, .footer, .title-md) {
-    --text-color: #353430;
-  }
-
-  @media (hover: hover) {
-    .header__theme-menu-button:hover {
-      outline: 1px solid var(--color-opacity);
-    }
-  }
-  .header__theme-menu-button:focus-visible {
-    border-block-end: 1px solid var(--color-opacity);
   }
 }
 

@@ -1,13 +1,16 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
 :root {
   --bg-color: #fff1f7;
   --text-color: #353430;
   --text-bg-color: #ff8dcb;
   --text-accent-color: #ff0070;
   --accent-color: #ffc2e6;
+  --text-common-color: var(--text-color, #353430);
+  --btn-color: var(--text-color, #353430);
+  --decorated-color: var(--text-color, #353430);
+  --title-md-color: var(--text-color, #353430);
+  --link-color: var(--text-color, #353430);
+  --link-accent-color: var(--text-bg-color, #ff8dcb);
+  --section-text: var(--text-color, #353430);
   --color-opacity: rgba(50, 49, 45, 0.4);
   --image-png-url: url('../images/cover-image-light.png');
   --image-avif-url: url('../images/cover-image-light.avif');

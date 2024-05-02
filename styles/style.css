@@ -1,12 +1,6 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
-/* .page {
-  сохраните в разметке и стилях класс page. На его основе работает скрипт. 
-} */
-
 .page {
   font-family: 'IBM Plex mono', monospace;
-  background-color: var(--bg-color, #fff1f7);
+  background-color: var(--bg-color);
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover;
@@ -53,7 +47,7 @@
 
 .text-common {
   margin-block-end: 20px;
-  color: var(--text-color, #353430);
+  color: var(--text-common-color, #353430);
   font-weight: 700;
   font-size: 18px;
   line-height: 23.4px;
@@ -61,7 +55,7 @@
 }
 
 .title-decor {
-  background-color: var(--text-bg-color, #ff8dcb);
+  background-color: var(--text-bg-color);
 }
 
 .title-sm {
@@ -83,6 +77,7 @@
 }
 
 .section .text {
+  color: var(--section-text, #353430);
   font-weight: 400;
 }
 
@@ -91,9 +86,9 @@
 }
 
 .link {
-  --text-accent-color: #ff8dcb;
+  color: var(--link-color);
   text-decoration: none;
-  text-shadow: 2px 2px 0 var(--text-accent-color, #ff8dcb);
+  text-shadow: 2px 2px 0 var(--link-accent-color, #ff8dcb);
 }
 
 .link:focus-visible {
@@ -119,6 +114,10 @@
     clamp(0rem, 1.2214rem + -2.5445vw, 0.625rem);
 }
 
+.title-md {
+  color: var(--title-md-color, #353430);
+}
+
 .decorated-zone {
   position: relative;
 }
@@ -129,8 +128,8 @@
   top: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
   right: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
   display: block;
-  border-inline-end: 1px solid var(--text-color, #353430);
-  border-block-start: 1px solid var(--text-color, #353430);
+  border-inline-end: 1px solid var(--decorated-color, #353430);
+  border-block-start: 1px solid var(--decorated-color, #353430);
   inline-size: 25px;
   block-size: 25px;
 }
@@ -141,8 +140,8 @@
   bottom: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
   left: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
   display: block;
-  border-inline-start: 1px solid var(--text-color, #353430);
-  border-block-end: 1px solid var(--text-color, #353430);
+  border-inline-start: 1px solid var(--decorated-color, #353430);
+  border-block-end: 1px solid var(--decorated-color, #353430);
   inline-size: 25px;
   block-size: 25px;
 }
@@ -194,6 +193,7 @@
   outline: none;
   outline-offset: 1px;
   color: var(--text-color, #353430);
+  color: var(--btn-color);
   font-weight: 400;
   font-size: 18px;
   line-height: 18px;
@@ -211,11 +211,11 @@
 
 @media (hover: hover) {
   .header__theme-menu-button:hover {
-    outline: 1px solid rgba(50, 49, 45, 0.4);
+    outline: 1px solid var(--color-opacity);
   }
 }
 .header__theme-menu-button:focus-visible {
-  border-block-end: 1px solid rgba(50, 49, 45, 0.4);
+  border-block-end: 1px solid currentColor;
 }
 
 /* sections */
