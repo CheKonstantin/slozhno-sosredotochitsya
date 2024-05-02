@@ -48,7 +48,7 @@
 
 @media (hover: hover) {
   .page.theme_dark .header__theme-menu-button:hover {
-    outline: 1px solid;
+    outline: 1px solid var(--color-opacity);
   }
 }
 
