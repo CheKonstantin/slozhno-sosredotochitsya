@@ -8,5 +8,8 @@
   --text-bg-color: #ff8dcb;
   --text-accent-color: #ff0070;
   --accent-color: #ffc2e6;
+  --color-opacity: rgba(50, 49, 45, 0.4);
+  --image-png-url: url('../images/cover-image-light.png');
+  --image-avif-url: url('../images/cover-image-light.avif');
 }
 
