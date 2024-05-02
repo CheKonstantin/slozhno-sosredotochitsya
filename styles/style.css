@@ -192,8 +192,7 @@
   padding: 0px 13px;
   outline: none;
   outline-offset: 1px;
-  color: var(--text-color, #353430);
-  color: var(--btn-color);
+  color: var(--btn-color, #353430);
   font-weight: 400;
   font-size: 18px;
   line-height: 18px;
